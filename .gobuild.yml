@@ -1,0 +1,15 @@
+filesets:
+    includes:
+    excludes:
+        - \.git
+        - ngrok
+        - .gobuild.yml
+        - README.md
+settings:
+        build: |
+            if test "$GOOS" = "windows" -a "$GOARCH" = "386"
+            then
+                go install -tags 'release' ngrok/main/ngrokd
+            else
+                go install -tags 'release' ngrok/main/ngrok
+            fi
