@@ -1,6 +1,8 @@
 filesets:
     includes:
         - README.md
+        - cert.pem
+        - key.pem
     excludes:
         - \.git
         - .gobuild.yml
