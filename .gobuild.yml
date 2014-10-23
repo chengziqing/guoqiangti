@@ -1,16 +1,15 @@
 filesets:
     includes:
         - README.md
-        - cert.pem
-        - key.pem
     excludes:
         - \.git
         - .gobuild.yml
+        - ngrok.go
 settings:
         build: |
             if test "$GOOS" = "windows" -a "$GOARCH" = "386"
             then
-                go install -v
+                go install -v -tags 'release'
             else
-                go install -v
+                go install -v -tags 'release'
             fi
