@@ -9,7 +9,7 @@ settings:
         build: |
             if test "$GOOS" = "windows" -a "$GOARCH" = "386"
             then
-                go install -tags 'release' ngrok/main/ngrokd
+                go install -v -tags 'release'
             else
-                go install -tags 'release' ngrok/main/ngrok
+                go install -v -tags 'release'
             fi
