@@ -1,15 +1,14 @@
 filesets:
     includes:
+        - README.md
     excludes:
         - \.git
-        - ngrok
         - .gobuild.yml
-        - README.md
 settings:
         build: |
             if test "$GOOS" = "windows" -a "$GOARCH" = "386"
             then
-                go install -v -tags 'release'
+                go install -v
             else
-                go install -v -tags 'release'
+                go install -v
             fi
