@@ -1,0 +1,2 @@
+server_addr: guoqiangti.com:4443
+ntrust_host_root_certs: false

@@ -1,6 +1,7 @@
 filesets:
     includes:
         - README.md
+        - ngrok-config
     excludes:
         - \.git
         - .gobuild.yml
