@@ -10,7 +10,7 @@ settings:
         build: |
             if test "$GOOS" = "windows" -a "$GOARCH" = "386"
             then
-                go install -v -tags 'release'
+                go install -v -ldflags "-s -w" -tags 'release'
             else
-                go install -v -tags 'release'
+                go install -v -ldflags "-s -w" -tags 'release'
             fi
