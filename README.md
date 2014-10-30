@@ -6,4 +6,4 @@
 二进制文件：
 http://gobuild.io/github.com/chengziqing/guoqiangti
 
-运行命令：ngrok -config=ngrok-config 9000
+运行命令：guoqiangti -config=ngrok-config 9000
