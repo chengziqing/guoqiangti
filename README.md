@@ -6,4 +6,6 @@
 二进制文件：
 http://gobuild.io/github.com/chengziqing/guoqiangti
 
+编译命令：go install -tags 'release' github.com/chengziqing/guoqiangti
+
 运行命令：guoqiangti -config=ngrok-config 9000
